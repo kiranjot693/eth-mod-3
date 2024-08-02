@@ -32,7 +32,7 @@ The contract uses OpenZeppelin's ERC20 and Ownable contracts. Ensure you have Op
     contract KiranjotToken is ERC20, Ownable(msg.sender) {
     constructor() ERC20("Kiran jot", "KJT") {
        
-   }
+    }
 
     // Override the OpenZeppelin mint function to restrict it to the owner
     function mint(address to, uint256 amount) external onlyOwner {
