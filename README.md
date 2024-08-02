@@ -52,4 +52,4 @@ function getBalance(address account) external view returns (uint256) {
     return balanceOf(account);
 }
 
-###Author: Kiran jot
+### Author: Kiran jot
