@@ -22,14 +22,15 @@ This repository contains the Solidity smart contract for the KiranjotToken (KJT)
 
 The contract uses OpenZeppelin's ERC20 and Ownable contracts. Ensure you have OpenZeppelin contracts installed in your project.
 
-#Usage
-#Deploying the Contract
+##Usage
+
+Deploying the Contract
 To deploy the contract, use your preferred Ethereum development environment, such as Truffle, Hardhat, or Remix.
 
-#Minting Tokens
+Minting Tokens
 Only the owner of the contract can mint new tokens.
 
-#solidity
+##solidity
 
 function mint(address to, uint256 amount) external onlyOwner {
     _mint(to, amount);
@@ -38,16 +39,16 @@ function mint(address to, uint256 amount) external onlyOwner {
 #Burning Tokens
 Any token holder can burn their tokens.
 
-#solidity
+##solidity
 
 function burn(uint256 amount) external {
     _burn(msg.sender, amount);
 }
-#Checking Balances
+##Checking Balances
 You can check the balance of any address using the getBalance function.
 
 function getBalance(address account) external view returns (uint256) {
     return balanceOf(account);
 }
 
-#Author: Kiran jot
+###Author: Kiran jot
