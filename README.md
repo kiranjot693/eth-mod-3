@@ -23,16 +23,16 @@ This repository contains the Solidity smart contract for the KiranjotToken (KJT)
 The contract uses OpenZeppelin's ERC20 and Ownable contracts. Ensure you have OpenZeppelin contracts installed in your project.
 # Contract code
 
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+     // SPDX-License-Identifier: MIT
+     pragma solidity ^0.8.18;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+    import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+    import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract KiranjotToken is ERC20, Ownable(msg.sender) {
+    contract KiranjotToken is ERC20, Ownable(msg.sender) {
     constructor() ERC20("Kiran jot", "KJT") {
        
-    }
+   }
 
     // Override the OpenZeppelin mint function to restrict it to the owner
     function mint(address to, uint256 amount) external onlyOwner {
